@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZERO GATE｜은하 길드 — 세계관·인물 소개</title>
+<meta name="description" content="크랙 스토리 《ZERO GATE｜은하 길드》의 세계관, 연표, 장소와 등장인물 소개">
+<meta property="og:title" content="ZERO GATE｜은하 길드">
+<meta property="og:description" content="게이트가 열린 지 10년. 헌터는 등록하고, 길드는 게이트를 산다. 세계관·연표·등장인물 소개.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@400;600&family=Gowun+Batang:wght@400;700&family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#070b1c; --bg2:#0d1430; --card:#111a37; --line:rgba(214,226,255,.16);
+  --text:#e8eefc; --muted:#a2aecd; --soft:#c7d6ff; --gate:#5b97ff; --gate2:#8fb8ff; --red:#ff5a6e;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Noto Sans KR",system-ui,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+.serif{font-family:"Gowun Batang",serif}
+.latin{font-family:"Cinzel",serif;letter-spacing:.28em}
+
+nav{position:sticky;top:0;z-index:20;background:rgba(7,11,28,.86);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+nav a{flex:0 0 auto;padding:12px 12px;text-decoration:none;color:var(--muted);font-size:14px;font-weight:500;white-space:nowrap}
+nav a:hover,nav a:focus{color:var(--text)}
+
+/* 히어로 */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero::before{content:"";position:absolute;inset:0;background:url(img/bg_zerozone.webp) center/cover;opacity:.42;filter:blur(1px)}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 70% 10%,rgba(91,151,255,.22),transparent 55%),linear-gradient(180deg,rgba(7,11,28,.15),var(--bg) 94%)}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,300px) 1fr;gap:36px;align-items:center;padding-top:48px;padding-bottom:52px}
+.covers{position:relative;aspect-ratio:2/3;border:1px solid var(--line);box-shadow:0 20px 60px rgba(0,0,0,.55),0 0 40px rgba(91,151,255,.18)}
+.covers img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:fade 16s infinite}
+.covers img:nth-child(1){animation-delay:0s}.covers img:nth-child(2){animation-delay:4s}.covers img:nth-child(3){animation-delay:8s}.covers img:nth-child(4){animation-delay:12s}
+@keyframes fade{0%{opacity:0}4%{opacity:1}25%{opacity:1}29%{opacity:0}100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.covers img{animation:none}.covers img:first-child{opacity:1}}
+.logo{font-family:"Cinzel Decorative",serif;font-size:clamp(30px,5.6vw,54px);letter-spacing:.06em;color:#f4f7ff;text-shadow:0 0 22px rgba(91,151,255,.75);line-height:1.1}
+.hero h1{margin:.15em 0 .45em;font-family:"Nanum Myeongjo",serif;font-weight:800;font-size:clamp(28px,4.6vw,44px);line-height:1.25;text-shadow:0 0 18px rgba(91,151,255,.5)}
+.hero p{color:var(--muted);margin:.35em 0}
+.sys{display:inline-block;margin-top:16px;padding:9px 14px;border:1px solid rgba(143,184,255,.4);background:rgba(13,20,48,.75);font-size:14.5px;color:var(--soft)}
+.dday{display:inline-flex;align-items:center;gap:8px;margin-top:12px;font-size:14px;color:#ffd0d6}
+.dday i{width:8px;height:8px;border-radius:50%;background:var(--red);box-shadow:0 0 10px var(--red);animation:pulse 1.6s infinite}
+@keyframes pulse{50%{opacity:.35}}
+@media (max-width:680px){.hero .wrap{grid-template-columns:1fr;gap:24px;padding-top:28px}.covers{max-width:250px;width:100%;margin:0 auto}}
+
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+.sec-head{text-align:center;margin-bottom:30px}
+.sec-head .latin{font-size:13px;color:var(--gate2)}
+.sec-head h2{margin:.25em 0 0;font-family:"Gowun Batang",serif;font-size:clamp(24px,3.6vw,32px)}
+.divider{display:flex;align-items:center;justify-content:center;gap:12px;margin:10px auto 0;width:220px}
+.divider::before,.divider::after{content:"";flex:1;height:1px;background:var(--line)}
+.divider i{width:12px;height:12px;border-radius:50%;border:2px solid var(--gate2);box-shadow:0 0 10px rgba(91,151,255,.6)}
+.lead{max-width:680px;margin:0 auto 28px;text-align:center;color:var(--muted)}
+
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+@media (max-width:760px){.grid2{grid-template-columns:1fr}}
+.box{background:var(--card);border:1px solid var(--line);padding:20px 20px 18px}
+.box h3{margin:0 0 8px;font-family:"Gowun Batang",serif;font-size:19px}
+.box p,.box li{color:var(--muted);font-size:15px}
+.box ul{margin:0;padding-left:18px}
+.box b{color:var(--text);font-weight:500}
+.quote{border-left:2px solid var(--gate);padding:4px 0 4px 14px;margin:12px 0;color:var(--soft);font-family:"Gowun Batang",serif}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 4px}
+.chips span{font-size:13px;padding:3px 9px;border:1px solid var(--line);color:var(--soft)}
+.gauge{margin:12px 0 6px;height:10px;background:linear-gradient(90deg,#3d6fd6 0%,#7fa7ff 55%,#ff8a5b 60%,#ff5a6e 80%,#141414 100%);border-radius:2px}
+.gauge-lab{display:flex;justify-content:space-between;font-size:12.5px;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{padding:8px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{color:var(--soft);font-weight:500;font-size:13px}
+.notice{font-size:14px;color:var(--soft);background:rgba(91,151,255,.08);border:1px solid rgba(143,184,255,.3);padding:8px 12px;margin:10px 0 0;font-family:"Gowun Batang",serif}
+
+/* 연표 */
+.tl{position:relative;max-width:760px;margin:0 auto;padding-left:28px}
+.tl::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--gate),rgba(91,151,255,.15) 80%,var(--red))}
+.ev{position:relative;margin:0 0 22px}
+.ev::before{content:"";position:absolute;left:-26px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--gate2)}
+.ev .when{font-family:"Cinzel",serif;font-size:14px;letter-spacing:.06em;color:var(--gate2)}
+.ev h3{margin:2px 0 4px;font-family:"Gowun Batang",serif;font-size:18px}
+.ev p{margin:0;color:var(--muted);font-size:15px}
+.ev .news{display:inline-block;margin-top:6px;font-size:13px;color:var(--soft);border:1px solid var(--line);padding:2px 8px}
+.ev.start::before{background:var(--gate);box-shadow:0 0 12px var(--gate)}
+.tag{display:inline-block;font-size:12px;padding:1px 8px;margin-left:6px;vertical-align:middle;border:1px solid var(--gate);color:var(--gate2)}
+.tag.other{border-color:var(--line);color:var(--muted)}
+.ev.redacted .when,.ev.redacted h3{color:#5b6680}
+.bar{display:inline-block;height:1em;vertical-align:-2px;background:#000;border:1px solid #1d2540}
+.stamp{display:inline-block;margin-left:8px;padding:0 8px;border:2px solid var(--red);color:var(--red);font-size:12px;font-weight:700;transform:rotate(-4deg);letter-spacing:.1em}
+.ev.final{margin-top:30px;padding:26px 18px;border:1px solid rgba(255,90,110,.35);background:linear-gradient(rgba(7,11,28,.55),rgba(7,11,28,.85)),url(img/bg_flood.webp) center/cover}
+.ev.final::before{left:-26px;border-color:var(--red);background:var(--red);box-shadow:0 0 14px var(--red)}
+.ev.final .when{color:#ffb1bb;font-size:16px}
+.ev.final h3{font-size:30px;margin:4px 0}
+
+/* 장소 */
+.places{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+@media (max-width:760px){.places{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.place{position:relative;aspect-ratio:3/2;overflow:hidden;border:1px solid var(--line);margin:0}
+.place img{width:100%;height:100%;object-fit:cover}
+.place figcaption{position:absolute;left:0;right:0;bottom:0;padding:18px 10px 8px;background:linear-gradient(transparent,rgba(5,8,22,.92));font-family:"Gowun Batang",serif;font-size:14px}
+.place figcaption small{display:block;color:var(--muted);font-family:"Noto Sans KR",sans-serif;font-size:12px}
+
+/* 인물 */
+.filters{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:22px}
+.filters button{font:inherit;font-size:14px;padding:6px 14px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--text);color:var(--bg);border-color:var(--text)}
+.chars{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+@media (max-width:760px){.chars{grid-template-columns:1fr}}
+.char{background:var(--card);border:1px solid var(--line);display:flex;flex-direction:column}
+.char[hidden]{display:none}
+.char .pic{aspect-ratio:960/657;overflow:hidden;background:#0a1028}
+.char .pic img{width:100%;height:100%;object-fit:cover}
+.char .body{padding:14px 16px 16px}
+.char .aff{font-size:13px;color:var(--gate2)}
+.char h3{margin:2px 0 6px;font-family:"Gowun Batang",serif;font-size:21px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.tags span{font-size:12.5px;padding:2px 8px;border:1px solid var(--line);color:var(--muted)}
+.char p{margin:0 0 8px;color:var(--muted);font-size:15px}
+.line{font-family:"Gowun Batang",serif;color:var(--soft);font-size:15px;border-top:1px solid var(--line);padding-top:10px}
+.char.mystery h3{letter-spacing:.3em}
+
+/* 시작 설정 */
+.starts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+@media (max-width:760px){.starts{grid-template-columns:1fr}}
+.lvl{display:inline-block;font-size:12px;padding:1px 8px;border:1px solid var(--line);color:var(--soft);margin-left:6px}
+
+footer{padding:40px 0 56px;text-align:center;color:var(--muted);font-size:13px}
+.cta{display:inline-block;margin-top:14px;padding:12px 26px;border:1px solid var(--gate2);color:var(--text);text-decoration:none;font-weight:700;background:rgba(91,151,255,.12)}
+:focus-visible{outline:2px solid var(--gate2);outline-offset:2px}
+</style>
+</head>
+<body>
+<nav aria-label="목차"><div class="wrap">
+  <a href="#world">세계관</a><a href="#timeline">연표</a><a href="#places">장소</a><a href="#chars-sec">등장인물</a><a href="#start">시작 설정</a>
+</div></nav>
+<header class="hero"><div class="wrap">
+  <div class="covers" role="img" aria-label="대표 이미지: 선우린, 채이수, 소예담, 민아라이 차례로 나온다"><img src="img/cover1.webp" alt="" width="720" height="1080"><img src="img/cover2.webp" alt="" width="720" height="1080"><img src="img/cover3.webp" alt="" width="720" height="1080"><img src="img/cover4.webp" alt="" width="720" height="1080"></div>
+  <div>
+    <div class="logo">ZERO GATE</div>
+    <h1>은하 길드</h1>
+    <p>게이트가 열린 지 10년. 헌터는 등록하고, 길드는 게이트를 산다.</p>
+    <p>2026년 7월 6일, 헌터 협회 등록 심사. 판독기에 뜬 당신의 결과. 그날부터 당신의 눈에만 숫자가 보인다.</p>
+    <div class="sys serif">[F급 · 특이 계열 · 출력 거의 0]</div><br>
+    <div class="dday"><i></i>대범람까지 D-129</div>
+  </div>
+</div></header>
+<main>
+<section id="world"><div class="wrap">
+  <div class="sec-head"><div class="latin">THE WORLD</div><h2>문이 열린 지 10년</h2><div class="divider"><i></i></div></div>
+  <p class="lead">서울 한복판 하늘에는 10년째 닫히지 않는 문이 걸려 있다. 사람들은 아침마다 날씨 대신 밤사이 열린 문 지도를 보고, 그 문을 그냥 올려다보며 출근한다.</p>
+  <div class="grid2">
+    <div class="box">
+      <h3>게이트</h3>
+      <p>허공에 푸른 금이 그어지고, 1~3초 뒤 금이 벌어져 문이 된다. 국가게이트관리국(국관)이 <b>1시간 안에 F~S 등급</b>을 판정하고, <b>7일 안에</b> 던전 보스를 쓰러뜨리거나 코어를 부수지 못하면 <b>브레이크</b> — 몬스터가 밖으로 쏟아진다.</p>
+      <table><tr><th>등급</th><th>비율</th><th>층</th><th>문의 색</th></tr>
+      <tr><td>F~E</td><td>65%</td><td>1~2</td><td>연한 하늘색</td></tr>
+      <tr><td>D~C</td><td>28%</td><td>2~4</td><td>짙은 남색</td></tr>
+      <tr><td>B~A</td><td>6.8%</td><td>4~9</td><td>청보라 · 보라</td></tr>
+      <tr><td>S</td><td>0.2%</td><td>10+</td><td>검은 테에 흰 속</td></tr></table>
+      <p class="notice">그리고 2016년부터 한 번도 닫힌 적 없는 문, 등급 측정 불가의 <b>제로 게이트</b>.</p>
+    </div>
+    <div class="box">
+      <h3>각성과 인장</h3>
+      <p>게이트 기운에 노출된 뒤 능력이 깨어나면 손목 안쪽에 <b>인장</b>이 떠오른다. 인장의 모양이 계열을 말한다. 각성자는 인구의 0.3%, 등급은 E~S, 그리고 판독 불가 <b>EX</b>.</p>
+      <div class="chips"><span>○ 강화</span><span>△ 방출</span><span>□ 조작</span><span>◇ 변이</span><span>◉ 감응</span><span>☆ 소환</span><span>∿ 특이(모양이 계속 바뀜)</span></div>
+      <p class="quote">"판독기는 거짓말을 안 해. 측정 불가가 뜨면, 그건 판독기가 모르는 거야."</p>
+    </div>
+    <div class="box">
+      <h3>잔향 — 힘의 대가</h3>
+      <p>능력을 쓸수록 몸에 게이트의 기운이 쌓인다. 0~100으로 재고, 하루 5씩 빠진다. 빨리 빼는 <b>정화</b> 시술은 1회 300만 원.</p>
+      <div class="gauge" aria-hidden="true"></div>
+      <div class="gauge-lab"><span>0</span><span>60 붉은손</span><span>80 역류</span><span>100</span></div>
+      <ul><li><b>60+</b> 인장이 붉어지고 두통·환청 — 은어로 '붉은손'</li><li><b>80+</b> 역류(폭주). 인장이 검게 번진다</li><li><b>100</b> 게이트화 — 사람이 작은 게이트가 된다. 공식 기록 3건</li></ul>
+    </div>
+    <div class="box">
+      <h3>히어로와 헌터</h3>
+      <table><tr><th></th><th>히어로(공무)</th><th>헌터(민간)</th></tr>
+      <tr><td>자격</td><td>한빛 졸업·국관 특채 + 라이선스 1~5급</td><td>길드 가입 + 헌터 등록</td></tr>
+      <tr><td>수입</td><td>연봉 + 출동 수당</td><td>입찰 공략 수익, 방송·광고</td></tr>
+      <tr><td>의무</td><td>출동 명령 거부 불가</td><td>없음(보험도 없음)</td></tr>
+      <tr><td>이미지</td><td>국민의 영웅, 공무원</td><td>연예인·스트리머, 돈</td></tr></table>
+    </div>
+    <div class="box">
+      <h3>세력</h3>
+      <ul>
+        <li><b>국가게이트관리국(국관)</b> — 본부는 광화문 지하 '광화문 언더'. 국장은 비각성자 첫 국장 강서준. 안에서도 "막는 게 일"이라는 쪽과 "게이트는 자원"이라는 쪽이 부딪친다.</li>
+        <li><b>헌터 협회 · 5대 길드</b> — 플레임 · 백호 · 아르고 · 은하 · 묵. 국관 입찰로 공략권을 따 마석으로 번다.</li>
+        <li><b>태성 그룹</b> — 마석 발전과 장비를 쥔 재벌. 한빛의 최대 후원사.</li>
+        <li><b>열린문</b> — 게이트를 '구원으로 가는 문'이라 믿는 교단. 수장은 얼굴 없는 목소리 '문지기'.</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>2026년의 일상</h3>
+      <ul>
+        <li><b>문알림</b> — 국관 앱 푸시. <i>[청] 마포구 망원동 F급 개방 · 반경 200m 우회</i></li>
+        <li><b>마석</b> — 국내 전력의 31%. 게이트가 줄면 전기요금이 오른다.</li>
+        <li><b>문숨</b> — 밤 11시 무렵 한강 쪽 하늘이 희미하게 밝아졌다 어두워진다. 10년째 매일 밤.</li>
+        <li><b>은어</b> — 문따기(공략) · 붉은손 · 검은손 · 맹물 · 7초 세대 · 0찍</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+
+<section id="timeline"><div class="wrap">
+  <div class="sec-head"><div class="latin">TIMELINE</div><h2>10년의 기록</h2><div class="divider"><i></i></div></div>
+  <p class="lead">이 세계 사람이라면 누구나 아는 일들. 2026년 가을의 기록은 국관이 기밀로 묶어 두었다.</p>
+  <div class="tl"><div class="ev"><div class="when">2016.11.12 18:07</div><h3>대균열</h3><p>퇴근길 한강 위 하늘에 첫 게이트 '제로 게이트'가 열렸다. 하늘이 7초 동안 하얗게 변했다 — 백야 7초.</p></div><div class="ev"><div class="when">2017.03</div><h3>S급 여명, 2차 범람 저지</h3><p>제로 게이트의 두 번째 범람을 혼자 막아 낸 흰 코트의 히어로.</p></div><div class="ev"><div class="when">2018</div><h3>히어로와 헌터</h3><p>각성자관리법 시행. 국가 공인 '히어로'와 민간 '헌터'가 나뉘었다.</p></div><div class="ev"><div class="when">2020</div><h3>5대 길드 체제</h3><p>길드 허가제·헌터 랭킹·게이트 입찰제. 플레임·백호·아르고·은하·묵.</p></div><div class="ev"><div class="when">2023</div><h3>홍대 사건</h3><p>교단 열린문이 처음으로 게이트를 '인위로' 열었다.</p></div><div class="ev"><div class="when">2025</div><h3>게이트, 처음으로 늘다</h3><p>개방 수가 전년보다 18% 늘었다. 문갤 괴담: "10주기에 큰 게 온다."</p></div><div class="ev start"><div class="when">2026.07.06</div><h3>헌터 협회 등록 심사 <span class="tag">이야기 시작</span></h3><p>판독기: F급 · 특이 계열 · 출력 거의 0. 그리고 처음 뜬 상태창.</p></div><div class="ev"><div class="when">2026.08.05</div><h3>성수동 B급 입찰</h3><p>플레임 길드 단독 낙찰. 은하는 입찰을 포기했다.</p></div><div class="ev"><div class="when">2026.08.12</div><h3>성수동 브레이크</h3><p>공략이 늦어진 게이트에서 몬스터가 쏟아졌다. 사망 9명.</p></div><div class="ev redacted"><div class="when">2026.10.<span class="bar" style="width:1.4em"></span></div><h3><span class="bar" style="width:7em"></span> <span class="stamp">국관 기밀</span></h3></div><div class="ev redacted"><div class="when">2026.10.<span class="bar" style="width:1.4em"></span></div><h3><span class="bar" style="width:5em"></span> <span class="stamp">국관 기밀</span></h3></div><div class="ev redacted"><div class="when">2026.10.<span class="bar" style="width:1.4em"></span></div><h3><span class="bar" style="width:9em"></span> <span class="stamp">국관 기밀</span></h3></div><div class="ev final"><div class="when">2026.11.12 18:07</div><h3>?</h3><p>10년 전, 그 시각.</p></div></div>
+</div></section>
+<section id="places"><div class="wrap">
+  <div class="sec-head"><div class="latin">PLACES</div><h2>장소</h2><div class="divider"><i></i></div></div>
+  <div class="places"><figure class="place"><img src="img/bg_assoc.webp" alt="헌터 협회" loading="lazy" width="960" height="657"><figcaption>헌터 협회<small>등록 심사, 매주 월요일 랭킹</small></figcaption></figure><figure class="place"><img src="img/bg_bid.webp" alt="입찰장" loading="lazy" width="960" height="657"><figcaption>입찰장<small>게이트를 사는 곳</small></figcaption></figure><figure class="place"><img src="img/bg_guild.webp" alt="은하 길드본부" loading="lazy" width="960" height="657"><figcaption>은하 길드본부<small>은빛 별 문장</small></figcaption></figure><figure class="place"><img src="img/bg_egate.webp" alt="E급 게이트" loading="lazy" width="960" height="657"><figcaption>E급 게이트<small>짐꾼 일당 15만 원</small></figcaption></figure><figure class="place"><img src="img/bg_seongsu.webp" alt="성수 게이트" loading="lazy" width="960" height="657"><figcaption>성수 게이트<small>같은 자리에 자꾸 다시 열리는 문</small></figcaption></figure><figure class="place"><img src="img/bg_studio.webp" alt="방송 스튜디오" loading="lazy" width="960" height="657"><figcaption>방송 스튜디오<small>문 열면 생방</small></figcaption></figure><figure class="place"><img src="img/bg_zerozone.webp" alt="제로존" loading="lazy" width="960" height="657"><figcaption>제로존<small>10년째 멈춘 한강변</small></figcaption></figure></div>
+</div></section>
+<section id="chars-sec"><div class="wrap">
+  <div class="sec-head"><div class="latin">CHARACTERS</div><h2>등장인물</h2><div class="divider"><i></i></div></div>
+  <p class="lead">등장인물은 전원 성인입니다. 숨은 사정은 플레이하며 알게 됩니다.</p>
+  <div class="filters" role="group" aria-label="인물 분류"><button type="button" data-f="all" aria-pressed="true">전체</button><button type="button" data-f="eunha" aria-pressed="false">은하 길드</button><button type="button" data-f="rival" aria-pressed="false">협회·라이벌</button><button type="button" data-f="out" aria-pressed="false">바깥</button></div>
+  <div class="chars" id="chars"></div>
+</div></section>
+<section id="start"><div class="wrap">
+  <div class="sec-head"><div class="latin">START</div><h2>시작 설정</h2><div class="divider"><i></i></div></div>
+  <div class="starts"><div class="box"><h3>등록 심사 <span class="lvl">보통</span></h3><p>7월 6일 헌터 협회. F급 판정, 처음 뜬 상태창, 그리고 은하 길드의 공고 한 장.</p></div><div class="box"><h3>입찰 전날 <span class="lvl">어려움</span></h3><p>10월 7일 밤, 길드장실. 신뢰도 18, 잔향 64. 내일은 성수 입찰.</p></div><div class="box"><h3>자유 등록</h3><p>등록 단말에서 등급·소속·시작을 번호로 고르거나 랜덤으로.</p></div></div>
+</div></section>
+</main>
+<footer><div class="wrap">
+  <div class="logo" style="font-size:26px">ZERO GATE</div>
+  <p>크랙(crack.wrtn.ai) 스토리 《ZERO GATE｜은하 길드》 소개 페이지</p>
+  <p style="margin-top:22px">등장인물은 모두 성인이며 실제 인물·단체와 관계없습니다. 이미지는 작품용으로 만든 일러스트입니다.</p>
+</div></footer>
+<script>
+const C=[{"k": "seonwoorin", "f": "eunha", "aff": "은하 길드장", "n": "선우린", "t": ["A급 · 조작(중력)", "냉정", "숫자"], "p": "길드원 이름과 생일은 다 외우면서, 웃는 일은 드물다.", "q": "선우린┃「감정은 됐고, 숫자로 말해 주세요.」", "m": false}, {"k": "kwonnarin", "f": "eunha", "aff": "은하 · 1공대장", "n": "권나린", "t": ["B급 · 강화(방패)", "맏언니", "술"], "p": "맞는 건 내 일이라는 탱커. 처음엔 당신을 '짐꾼'이라 부른다.", "q": "권나린┃「뒤로 빠져. 맞는 건 내 일이야.」", "m": false}, {"k": "chaeisu", "f": "eunha", "aff": "은하 · 입단 동기", "n": "채이수", "t": ["C급 · 방출(불꽃)", "츤데레", "막타"], "p": "같은 날 입단한 라이벌. 막타를 뺏기면 화낸다.", "q": "채이수┃「…딱히 너 걱정한 거 아니거든. 막타 수 세는 중이야.」", "m": false}, {"k": "soyedam", "f": "eunha", "aff": "은하 · 힐러", "n": "소예담", "t": ["D급 · 감응(정화)", "다정", "간식"], "p": "공대원 잔향을 가장 먼저 걱정한다. 주머니엔 늘 사탕.", "q": "소예담┃「오늘은 딸기 맛이에요. 하나 드세요.」", "m": false}, {"k": "minara", "f": "eunha", "aff": "은하 · 정보", "n": "민아라", "t": ["E급 · 특이(투명)", "과묵", "게임"], "p": "당신이 허공을 보는 버릇을 가장 먼저 눈치챈다.", "q": "민아라┃「…지금 뭐 봤어? 체력바?」", "m": false}, {"k": "hayena", "f": "eunha", "aff": "은하 · 부길드장", "n": "하예나", "t": ["A급 · 방출(빛)", "협상가"], "p": "우아한 협상가. 국관과도 정보를 주고받는다.", "q": "하예나┃「정보는 공짜가 아니에요.」", "m": false}, {"k": "bangsua", "f": "rival", "aff": "헌터 협회 · 등록관", "n": "방수아", "t": ["비각성자", "친절", "소문통"], "p": "랭킹·입찰 소식은 늘 그녀에게서 먼저 나온다.", "q": "방수아┃「아, 잠깐만요! 방금 공고가 하나 떴는데…」", "m": false}, {"k": "takjaeyun", "f": "rival", "aff": "플레임 · 2공대장", "n": "탁재윤", "t": ["A급 · 방출", "오만"], "p": "플레임 길드장 백도하의 오른팔.", "q": "탁재윤┃「F급이 여긴 왜 왔어? 짐 들러?」", "m": false}, {"k": "seokwoo", "f": "rival", "aff": "묵 · 브로커", "n": "석우", "t": ["능글", "금반지"], "p": "5대 길드에 끼지만 이름뿐인 그림자 길드, 묵의 얼굴.", "q": "석우┃「숫자가 보인다면서요. 그거, 얼마에 팔래요?」", "m": false}, {"k": "baekdoha", "f": "rival", "aff": "플레임 길드장 · 헌터 랭킹 1위", "n": "백도하", "t": ["인기", "계산", "야심"], "p": "방송에선 다정한 형, 카메라가 꺼지면 숫자만 말한다.", "q": "백도하┃「구독, 좋아요, 그리고 살아서 돌아오기.」", "m": false}, {"k": "yuharin", "f": "out", "aff": "방송 헌터 · 구독 410만", "n": "유하린", "t": ["밝음", "겁쟁이", "진심"], "p": "국관 발표보다 빠른 게이트 생중계. 합방 한 번이면 랭킹이 바뀐다.", "q": "유하린┃「자, 여러분! 문 열었습니다~」", "m": false}, {"k": "parkian", "f": "out", "aff": "국관 감지반 · 분석관", "n": "박이안", "t": ["데이터 덕후", "수다"], "p": "당신의 숫자를 자기 데이터와 맞춰 보고 싶어 한다.", "q": "박이안┃「그 숫자, 저한테도 보여 줄 수 있어요?」", "m": false}, {"k": "hansoyul", "f": "out", "aff": "국관 현장 3팀 · 에이스", "n": "한소율", "t": ["B급 · 강화", "무뚝뚝"], "p": "국관 현장팀 에이스. 성수 근처에서 스칠지도 모른다.", "q": "한소율┃「민간은 봉쇄선 밖으로.」", "m": false}, {"k": "unknown", "f": "out", "aff": "???", "n": "???", "t": ["???"], "p": "아직 만나지 않은 누군가.", "q": "", "m": true}];
+const box=document.getElementById('chars');
+box.innerHTML=C.map(c=>`<article class="char${c.m?' mystery':''}" data-f="${c.f}"><div class="pic"><img src="img/${c.k}.webp" alt="${c.m?'정체를 알 수 없는 인물의 흐린 실루엣':c.n}" loading="lazy" width="960" height="657"></div><div class="body"><div class="aff">${c.aff}</div><h3>${c.n}</h3><div class="tags">${c.t.map(x=>`<span>${x}</span>`).join('')}</div><p>${c.p}</p>${c.q?`<div class="line">${c.q}</div>`:''}</div></article>`).join('');
+document.querySelectorAll('.filters button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.filters button').forEach(x=>x.setAttribute('aria-pressed',x===b?'true':'false'));
+  const f=b.dataset.f; document.querySelectorAll('.char').forEach(c=>{c.hidden=!(f==='all'||c.dataset.f===f)});
+}));
+</script>
+</body>
+</html>
